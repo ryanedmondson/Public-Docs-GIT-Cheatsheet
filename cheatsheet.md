@@ -8,8 +8,6 @@ Helpful blogs for beginners:
 
 ## Table of contents
 
-- Coming soon
-
 1. Setup
    1. [Installing GIT](#Installing-GIT)
    2. [Initiating a repository](#Initiating-a-repository)
