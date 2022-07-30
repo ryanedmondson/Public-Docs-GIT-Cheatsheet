@@ -17,6 +17,10 @@ Helpful blogs for beginners:
    2. [How to get the GIT status](#How-to-get-the-GIT-status)
       - [Detailed GIT status](#Detailed-GIT-status)
       - [Short GIT status](#Short-GIT-status)
+3. Staging area
+   1. [Add a file to the staging area](#Add-a-file-to-the-staging-area)
+   2. [Remove a file from the staging area](#Remove-a-file-from-the-staging-area)
+   3. [Remove a file from the staging area & the project](#Remove-a-file-from-the-staging-area-&-the-project)
 
 ## Setup
 
@@ -86,3 +90,23 @@ The first 2 characters of the status will indicate one of the following:
 | ?         | Untracked changes.    |
 
 The very first character represents the status in the staging area & the second character represents the status of the working directory.
+
+## Staging
+
+### <a name="Staging-area-context">Staging area context</a>
+
+After you edit a file, it will be laballed as "unstaged" in the GIT status. You wouldn't want all your updates to be reflected in the repository as you may have accidently edited one. This is why GIT flags them as modified rather than putting them straight into the queue for commitment.
+
+_Tip: Think of the staging area as the commitment queue_
+
+### <a name="Add-a-file-to-the-staging-area">Add a file to the staging area</a>
+
+To add a file to the staging area use `git add` followed by your file name.
+
+### <a name="Remove-a-file-from-the-staging-area">Remove a file from the staging area</a>
+
+To remove a file from the staging area use `git reset head` followed by your file name.
+
+### <a name="Remove-a-file-from-the-staging-area-&-the-project">Remove a file from the staging area & the project</a>
+
+To remove a file from the staging area use `git rm -f` followed by your file name.
